@@ -74,7 +74,7 @@
             if (strpos($original_url, 'volta.js')) {
                 remove_filter('clean_url', 'unclean_url', 10, 3);
                 $url_parts = parse_url($good_protocol_url);
-                return $url_parts['scheme'] . '://' . $url_parts['host'] . $url_parts['path'] . "' " . " class='so-init' data-so-customer-api-key-public='" . get_option('data-so-customer-api-key-public') . "' data-so-site-login-page-url='" . C_SO_SITE_LOGIN_PAGE_URL . "' data-so-site-authorized-resource-url='" . C_SO_SITE_AUTHORIZED_RESOURCE_URL . "' data-so-site-request-mode='direct' data-so-site-app-id='" . get_option('data-so-site-app-id') . "' data-so-login-form-index='1";
+                return $url_parts['scheme'] . '://' . $url_parts['host'] . $url_parts['path'] . "' " . " class='volta-init' data-volta-customer-api-key-public='" . get_option('data-so-customer-api-key-public') . "' data-volta-site-login-page-url='" . C_SO_SITE_LOGIN_PAGE_URL . "' data-volta-site-authorized-resource-url='" . C_SO_SITE_AUTHORIZED_RESOURCE_URL . "' data-volta-site-request-mode='direct' data-volta-site-app-id='" . get_option('data-so-site-app-id') . "' data-volta-login-form-index='1";
             }
             return $good_protocol_url;
         }
@@ -85,7 +85,7 @@
             <div style="font-size: 30px;text-align: center;margin: 20px auto;">
                 OR
             </div>
-            <div id="so-login-container" class="SiteLoginContainer" style="margin: 20px auto;"></div>
+            <div id="volta-login-container" class="SiteLoginContainer" style="margin: 20px auto;"></div>
     <?php endif; ?>
 
     </div>
